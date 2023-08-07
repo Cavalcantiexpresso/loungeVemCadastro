@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
+
+
+    <title>Cadastro Lounge VEM igreja</title>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img class="imagem-logo" src="./assets/imagens/Captura de tela 2023-08-07 180153.png"
+                alt="logo da aplicação lounge">
+            <p class="p-logo">Queremos conhecer você!</p>
+        </div>
+    </header>
+    <div class="container-form">
+        <form id="culto-form">
+            <div class="section">
+                <label for="data">Data do Culto:</label>
+                <input type="date" id="data" name="data" required onchange="updateMinMax()">
+                <label for="hora">Hora do Culto:</label>
+                <select id="hora" name="hora" required>
+                    <option value="10:00">10h</option>
+                    <option value="16:00">16h</option>
+                    <option value="18:00">18h</option>
+                    <option value="19:30">Quarta 19:30h</option>
+                </select>
+            </div>
+
+
+            <div class="section">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="section">
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+                <label for="estado-civil">Estado Civil:</label>
+                <select id="estado-civil" name="estado-civil">
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+            </div>
+            <div class="section">
+                <label>
+                    <input type="checkbox" name="entregue-para-jesus">
+                    Me entreguei para Jesus hoje
+                </label>
+            </div>
+            <div class="section">
+                <label>
+                    <input type="checkbox" name="apenas-visitando">
+                    Apenas visitando
+                </label>
+            </div>
+            <div class="section">
+                <label>
+                    <input type="checkbox" name="envolver-com-vem">
+                    Quero me envolver com VEM igreja
+                </label>
+            </div>
+            <div class="section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="section">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <!-- <div class="section">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div> -->
+            <button type="submit" id="submit-btn" onclick="imprimir()">Enviar e imprimir</button>
+        </form>
+    </div>
+    <footer>
+        <p>VEM igreja - por Ele vivemos, Existimos e nos movemos!</p>
+    </footer>
+</body>
+
+</html>
