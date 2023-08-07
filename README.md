@@ -1,2 +1,2 @@
 # loungeVemCadastro
-sistema para impressão de cadastro da sala do lounge
+Sistema para impressão de cadastro da sala do lounge
